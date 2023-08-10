@@ -1,71 +1,94 @@
+body {
+    margin: 0;
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 } 
 
+.container {
+    padding: 25px;
+}
+
 .icon {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: right;
 }
 
 .material-icons {
     cursor: pointer;
 }
 
-.card-background {
-    width: 1100px;
-    margin: 20px auto;
+.card-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 30px;
 }
 
 .card {
-    width: 300px;
-    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px grey;
+    box-sizing: border-box;
+    margin-right: 5%;
+    padding: 15px 10px;
     text-align: center;
-    background-size: 300px 300px;
+    width: 30%;
+}
+
+.card:nth-child(3n+3) { 
+    margin-right: 0;
+}
+
+.card:nth-child(n+4) {
+    margin-top: 25px;
+}
+
+.card-name, .item-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-color, .item-color {
+    color: grey;
+    font-size: 12px;
+}
+
+.card-img {
+    max-width: 100%;
 }
 
 .card-info {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 155px;
     color: red;
-    font-weight: 400;
 }
 
 .button {
     color: red;
-    border-radius: 18px;
-    border: 1px solid red;
     font-family: inherit;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 0.4em 1.2em;
+    background-color: initial;
+    border: 1px solid red;
+    border-radius: 10px;
     cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 7px;
 }
 
 .item {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 0 20px 5px 20px;
-    background-color: #f6f6f6;
-    font-weight: 200;
-
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    margin-top: 3px;
+    padding: 0 15px;
 }
 
 .item-img {
-    width: 200px;
     height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
+    max-width: 100%;
 }
 
- .item-price {
+.item-price {
     color: red;
-    font-weight: 400;
- }
+}

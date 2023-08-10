@@ -44,12 +44,11 @@ export const Store = () => {
   }
 
   return (
-    <>
+    <div className="container">
       <div className="icon">
         <IconSwitch icon={icon} onSwitch={handleButtonClick}/>
       </div>
       {icon === 'view_module' ? <CardsView cards={products} /> : <ListView items={products} /> }
-    </>
-    
+    </div>
   )
 }
